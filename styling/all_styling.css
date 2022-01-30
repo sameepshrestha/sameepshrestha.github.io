@@ -154,7 +154,7 @@ h1{
 }
 
 .robotics-media {
-    flex-basis: 38%;
+    flex-basis: 35%;
     display:flex;
     /* background-color: white; */
     align-self:center;
