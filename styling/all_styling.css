@@ -143,6 +143,12 @@ h1{
     /* align-items: center; */
     /* justify-content: center; */
 }
+@media (max-width: 700px) {
+    #container-robotics{display:flex;
+        flex-direction: column;
+       /* text-align: center;
+        padding: 8%;}   */
+    }}
 #container-robotics >div {
     padding:2%;
 }
@@ -209,9 +215,9 @@ h1{
 ul {
     list-style-type: none;
 }
-.container-bottom-social {
+/* .container-bottom-social {
     padding: 20px;
-}
+} */
 .container-bottom-links {
     padding:20px;
     color: rgb(255,255,255,.75);
@@ -229,10 +235,12 @@ h3 {
     color:rgb(255,255,255,.75)
 }
 .container-bottom-profile{
-    padding:20px;
+    /* padding:20px; */
     color:rgb(255,255,255,.75);
 }
+
 .container-bottom-profile li {
     color:rgb(255,255,255,.75);
+    text-align: left;
     /* line-height: 2x; */
 }
