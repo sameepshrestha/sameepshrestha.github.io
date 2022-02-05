@@ -9,6 +9,7 @@ Body{
     height:60px;
     top:0;
     position:sticky;
+    border-bottom: 1px solid rgb(255,255,255,.3);
 }
 .main-header {
 
