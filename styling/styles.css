@@ -1,0 +1,248 @@
+/* making Default for all boxes */
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'poppins','sans-serif';
+    box-sizing: border-box
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background: #080808;
+    color :white;
+}
+.container {
+    padding: 0px 10%;
+}
+#container {
+    padding: 10px 10%;
+}
+/* I didnot want padding on the first container but needed one on the second */
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("./images/background.jpg");
+    background-size:cover ;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo {
+    width:140px;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content:'';
+    width:0;
+    height:3px;
+    background: #ff004f;
+    position:absolute;
+    left:0;
+    bottom :-6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width:100%;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 20px;
+}
+.header-text h1{
+    margin-top: 20px;
+    font-size: 40px;
+}
+.header-text h1 span{
+    color :#ff004f;
+}
+/* ------------------------about------------------ */
+#about{
+    padding:80px 0;
+    color: #ababab;
+}
+.row {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-column1 {
+    flex-basis: 40%;
+}
+.about-column1 img {
+    width :100%;
+    border-radius: 15px;
+}
+.about-column2 {
+    flex-basis: 50%;
+}
+.sub-title {
+    font-size:50px;
+    font-weight:600;
+    color:#fff;
+}
+
+.tab-titles{
+    display:flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right:50px;
+    font-size:18px;
+    font-weight: 500;
+    cursor:pointer;
+    position:relative;
+}
+.tab-links::after{
+    content:'';
+    width:0;
+    height: 3px;
+    background:red;
+    bottom: -8px;
+    position:absolute;
+    left:0;
+    transition:.5s;
+
+}
+.tab-links.active-link::after{
+    width:50%;
+}
+
+.tab-contents ul li {
+list-style: none;
+margin:10px 0;
+}
+.tab-contents ul li span {
+    color:#b54769;
+    font-size: 14px;
+}
+.tab-contents{
+    display:none;
+}
+
+.tab-contents.active-tab{
+    display:block;
+}
+
+/* --------------------services------------------- */
+#services {
+    padding:30px 0;
+
+}
+.services-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+}
+
+.services-list div{
+    background: #262626;
+    padding:40px;
+    font-size:15px;
+    font-weight:300px ;
+    border-radius:10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list div h2{
+    color:#b54769;
+    font-size:25px;
+    font-weight:500px;
+    margin-bottom: 15px;
+}
+.services-list div a {
+    text-decoration :none;
+    color: #fff;
+    font-size: 18px;
+    margin-top:20px;
+    display:inline-block;
+}
+.services-list div:hover{
+    background: #802542;
+    color:#fff;
+    transform: translateY(-10px);
+}
+.services-list div:hover h2{
+    color:#fff;
+}
+/* ----------------RObotics Projects---------------------- */
+#robotics{
+    padding: 30px 0;
+}
+.robotics-projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+}
+
+.youtube1{
+    width:100%;
+}
+.youtube1 iframe{
+    width:95%;
+}
+.robotics-projects div h2{
+    color:#b54769;
+    font-size:25px;
+    font-weight:500px;
+    margin-bottom: 15px;
+}
+.robotics-projects.aboutrobot1{
+    width:30%;
+    margin:5%;
+    
+}
+iframe {
+    width: 95%;
+}
+
+.allvideo {
+    background: #262626;
+    border-radius:10px;
+
+}
+.robotics-projects div{
+    background: #262626;
+    padding:40px;
+    font-size:18px;
+    font-weight:300px ;
+    border-radius:10px;
+    /* text-align: center; */
+}
+
+.vision-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+}
+
+.vision img {
+    width: 100%;
+    height:100%;
+    border-radius: 10px;
+    display: block;
+}
+.vision-list h2{
+    color:#b54769;
+    font-size: 17px;
+}
