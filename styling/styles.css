@@ -85,6 +85,7 @@ nav ul li a:hover::after{
 }
 .about-column1 {
     flex-basis: 40%;
+    margin: auto;
 }
 .about-column1 img {
     width :100%;
@@ -92,6 +93,7 @@ nav ul li a:hover::after{
 }
 .about-column2 {
     flex-basis: 50%;
+    margin: auto;
 }
 .sub-title {
     font-size:50px;
