@@ -160,6 +160,7 @@ margin:10px 0;
     font-size:15px;
     font-weight:300px ;
     border-radius:10px;
+    /* text-align: justify; */
     transition: background 0.5s, transform 0.5s;
 }
 .services-list div h2{
@@ -270,6 +271,23 @@ iframe {
     padding:30px 0;
 }
 
+.contact-left{
+    max-width: 400px;
+    margin:auto;
+    display: inline-block;
+    /* align-items: center; */
+    /* justify-content:; */
+    text-align: center;
+}
+.contact-left p{
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 305;
+}
+#contact a{
+    color: #ababab;
+    text-decoration: none;
+}
 /* embed{
     max-width: 90%;
 } */
