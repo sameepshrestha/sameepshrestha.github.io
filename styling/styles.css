@@ -245,4 +245,31 @@ iframe {
 .vision-list h2{
     color:#b54769;
     font-size: 17px;
+    text-align: center;
 }
+
+@media only screenn and (max-width:400px){
+    #header{
+        background-image: url("../images/background2.png");
+    }
+}
+
+#writing-sample{
+    padding:30px 0;
+
+}
+
+#writing-sample .container h1{
+    text-align: left;
+}
+
+.pdf-container {
+    text-align: center;
+    max-width: 100%;
+    margin: auto;
+    padding:30px 0;
+}
+
+/* embed{
+    max-width: 90%;
+} */
