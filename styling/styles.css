@@ -35,7 +35,7 @@ nav {
     flex-wrap: wrap;
 }
 .logo {
-    width:140px;
+    width: 70px;
 }
 nav ul li {
     display: inline-block;
@@ -251,10 +251,47 @@ iframe {
     text-align: center;
 }
 
-@media only screenn and (max-width:400px){
+nav .fa-solid {
+    display: none;
+}
+
+@media only screen and (max-width:700px){
     #header{
         background-image: url("../images/background2.png");
-    }
+
+        }
+        nav .fa-solid{
+            display: block;
+            font-size:25px;
+            cursor: pointer;
+        }
+        nav ul{
+            background:#262626;
+            position:fixed;
+            top:0;
+            right:-200px;
+            width:200px;
+            height:100vh;
+            padding-top: 50px;
+            z-index:2;
+            transition: right 0.5s;
+        }
+        nav ul li {
+            display: block;
+            margin:25px;
+        }
+        nav ul .fa-solid{
+            position:absolute;
+            top:25px;
+            left:25px;
+            cursor:pointer;
+        }
+        .about-column2{
+            flex-basis: 100%;
+        }
+        .about-column1{
+            display: none;
+        }
 }
 
 #writing-sample{
